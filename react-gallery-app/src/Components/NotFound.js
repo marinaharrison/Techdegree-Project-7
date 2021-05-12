@@ -4,8 +4,9 @@ import React from 'react';
 
 const NotFound = () => (
     <li className='not-found'>
-        <h2> No Results Found </h2>
-        <p> Oh rats! Your search did not match any results. Try another search, babes.</p>
+        <h2> Oops! </h2>
+        <h1>That page doesn't exist.</h1>
+        <p>Move along, nothing to see here...</p>
     </li>
 );
 

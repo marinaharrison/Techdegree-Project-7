@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
-//Below will route and add Header links to the top of the photo app.
+//Below will route and add Header html to the top of the photo app.
 
 const Nav = () => (
     <nav className="main-nav">
