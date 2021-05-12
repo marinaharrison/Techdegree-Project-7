@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter,
-       Route, Switch} from 'react-router-dom';
+       Route,
+       Switch} from 'react-router-dom';
 import apiKey from './config';
 import Nav from './Components/Nav';
 import PhotoContainer from './Components/PhotoContainer';
@@ -75,7 +76,7 @@ class App extends Component {
 
 }
 //Rendered the components in the order they appeared on the header
-//Routed the header links in the <Switch>
+//Routed the header links in the <Switch> tag
   render() {
     return (
 
@@ -87,9 +88,9 @@ class App extends Component {
         <Switch>
           <Route exact path= "/" render={ () => <PhotoContainer data={this.state.photos} title={this.state.tags}/>} />
           <Route exact path= "/search/:query" render={ () => <PhotoContainer data={this.state.photos} title={this.state.tags} onSearch={this.searchResults}/> }/>
-          <Route path= "/wonderwoman" render={ () => <PhotoContainer data={this.state.wonderWoman} onClick={this.state.wonderWoman} title="wonder woman"/>} />
-          <Route path= "/captainmarvel" render={ () => <PhotoContainer data={this.state.captainMarvel} onClick={this.state.captainMarvel} title="captain marvel"/>} />
-          <Route path= "/blackwidow" render={ () => <PhotoContainer data={this.state.blackWidow} onClick={this.state.blackWidow} title="black widow"/> } />
+          <Route path= "/wonderwoman" render={ () => <PhotoContainer data={this.state.wonderWoman} onClick={this.state.wonderWoman} title="Wonder Woman"/>} />
+          <Route path= "/captainmarvel" render={ () => <PhotoContainer data={this.state.captainMarvel} onClick={this.state.captainMarvel} title="Captain Marvel"/>} />
+          <Route path= "/blackwidow" render={ () => <PhotoContainer data={this.state.blackWidow} onClick={this.state.blackWidow} title="Black Widow"/> } />
           <Route component={NotFound} />
         </Switch>
       </div>
