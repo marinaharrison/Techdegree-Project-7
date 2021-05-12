@@ -1,6 +1,6 @@
 import React from 'react';
 
-//this will be routed and diplayed when the search yields no results.
+//this will be routed and diplayed when the search yields no results/page doesn't exist
 
 const NotFound = () => (
     <li className='not-found'>
